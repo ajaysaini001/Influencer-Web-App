@@ -1,0 +1,46 @@
+.menubar {
+    width: 100%;
+    height: 20%;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    padding: 5px;
+  }
+  
+  /* .opacity {
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+  } */
+  
+  .content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background: aliceblue;
+    position: relative;
+    z-index: 99;
+    flex-direction: column;
+    transform:translateY(-100%) ;
+    animation: slide 0.3s ease forwards;
+
+  }
+  
+  @keyframes slide {
+    0%{
+        transform: translateY(-100%)
+    }
+    100%{
+        transform: translateY(0%);
+    }
+    
+  }
